@@ -1,4 +1,140 @@
-div[class^="col"] {
-    border: 4px solid black;
-    min-height: 100px;
-} 
+
+
+:root {
+    --orange: #ffac59;
+    --yellow: #EAFF38;
+    --blue: #C3FDFF;
+    --green: #7ADC8F;
+    --purple: #9574FA;
+}
+
+
+body {
+    background-image: url('../img/off-white-bg.jpg');
+    background-repeat: repeat;
+}
+
+
+h1 {
+    font-size: 3.75rem;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+h4 {
+    font-weight: bold;
+}
+
+
+.navigation {
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    align-items: center;
+}
+
+
+.navigation .col-1:first-child {
+    margin-left: 30px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+}
+
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+
+.splashscreen {
+    padding: 80px 40px;
+    border-bottom: 2px solid black;
+    background-image: url('../img/blue-bg.jpg');
+    justify-content: center;
+}
+
+
+.btn {
+    border-radius: 50px;
+    padding: 8px 40px;
+    border: 2px solid black;
+    margin: 20px 10px;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+
+.btn-primary {
+    background-color: var(--purple);
+    color: black;
+}
+
+
+.btn-info {
+    background-color: var(--orange);
+}
+
+
+.btn-warning {
+    background-color: var(--yellow);
+}
+
+
+.services {
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+
+/* Following styles create the inner border in the features section */
+.col-4:nth-child(1),  
+.col-4:nth-child(2),  
+.col-4:nth-child(5),  
+.col-4:nth-child(6) {
+    border-right: 2px solid #c9c9c9;
+}
+
+
+.col-4:nth-child(1),  
+.col-4:nth-child(2),  
+.col-4:nth-child(3) {
+    padding-bottom: 25px;
+}
+
+
+.col-4:nth-child(5),  
+.col-4:nth-child(6),  
+.col-4:nth-child(7) {
+    padding-top: 25px;
+}
+
+
+hr {
+    margin: 0;
+    height:2px;
+    border:none;
+    color:#333;
+    background-color:#333;
+}
+/* END inner border in the features section */
+
+
+.features h2 {
+    font-weight: bold;
+}
+
+
+.attribution {
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+    color: var(--purple);
+}
